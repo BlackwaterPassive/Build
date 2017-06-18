@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DATE=$(date +"%Y-%m-%d_%H%M")
+DATE=$(date +"%Y_%m_%d_%H%M")
 
 raspistill -n -vf -hf -o /home/pi/Build/$DATE.jpg
 git add $DATE.jpg
