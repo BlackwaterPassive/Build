@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd /home/pi/Build/
-git pull origin
+/usr/bin/git -C /home/pi/Build/ pull origin master

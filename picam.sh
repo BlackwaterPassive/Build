@@ -1,3 +1,5 @@
 #!/bin/bash
 
-raspistill -n -vf -hf -o /home/pi/Build/$(date +"%Y_%m_%d_%H%M").jpg
+DATE=$(/usr/bin/date +"%Y_%m_%d_%H%M")
+
+raspistill -n -vf -hf -o /home/pi/Build/$DATE.jpg
