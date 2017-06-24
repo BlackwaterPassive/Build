@@ -1,0 +1,60 @@
+# Edit this file to introduce tasks to be run by cron.
+# 
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+# 
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').# 
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+# 
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+# 
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+# 
+# For more information see the manual pages of crontab(5) and cron(8)
+# 
+# m h  dom mon dow   command
+0 5 * * *  cd /home/pi/Build/ && git pull origin > /home/pi/Build/cronlog.log
+30 6 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+0 7 * * *  /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+30 7 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+0 8 * * *  /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+30 8 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+0 9 * * *  /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+30 9 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+0 10 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+30 10 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+0 11 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+30 11 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+0 12 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+30 12 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+0 13 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+30 13 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+0 14 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+30 14 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+0 15 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+30 15 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+0 16 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+30 16 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+0 17 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+30 17 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+0 18 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+30 18 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+0 19 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+30 19 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+0 20 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+30 20 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+0 21 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+30 21 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+13 22 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+14 22 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+15 22 * * * /usr/bin/raspistill -n -vf -hf -o /home/pi/Build/$(/bin/date +"%Y_%m_%d_%H%M").jpg > /home/pi/Build/cronlog.log
+16 22 * * * cd /home/pi/Build && git add *.jpg && git commit -a -m 'added pic set' > /home/pi/Build/cronlog.log
+17 23 * * * cd /home/pi/Build && git push origin > /home/pi/Build/cronlog.log
+
